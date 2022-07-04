@@ -1,8 +1,16 @@
 body {
-    background-color: #191970;
+    background-color: #686A6C;
 }
 
 h1 {
     text-align: center;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
     color: white;
 }
