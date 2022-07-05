@@ -5,7 +5,7 @@ function home () {
     return (
         <Def>
             <main>
-                <h1>HOME</h1>
+                <h1>REST-Rant</h1>
                 <div>
                     <img src='/images/cooking.jpg' alt='Burger with a knife in it' />
                     <div>
@@ -21,3 +21,5 @@ function home () {
 }
 
 module.exports = home
+
+//look at the end of rest rant part 4 

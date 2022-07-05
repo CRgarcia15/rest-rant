@@ -7,7 +7,8 @@ router.get('/', (req, res) => {
         state: 'WA',
         cuisines: 'Thai, Pan-Asian',
         pic: '/images/thai.jpg'
-      }, {
+      }, 
+      {
         name: 'Coding Cat Cafe',
         city: 'Phoenix',
         state: 'AZ',
@@ -16,5 +17,9 @@ router.get('/', (req, res) => {
       }]
       
     res.render('places/index', {places})
+})
+
+router.get('/new', (req, res) => {
+  res.render('places/new')
 })
 module.exports = router
