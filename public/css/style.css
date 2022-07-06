@@ -1,7 +1,36 @@
 body {
     background-color: #686A6C;
+    text-align: center;
 }
 
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+nav {
+    background-color: #686A6C;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    color: #191970;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: white;
+}
 h1 {
     text-align: center;
     color: white;
