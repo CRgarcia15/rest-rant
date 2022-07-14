@@ -4,7 +4,6 @@ const express = require('express')
 const app = express()
 const methodOverride = require('method-override')
 
-
 // Express settings
 app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
@@ -25,3 +24,4 @@ app.get ('*', (req, res) => {
 })
 
 app.listen(process.env.PORT)
+
