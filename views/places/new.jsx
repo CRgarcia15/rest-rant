@@ -40,15 +40,15 @@ const Def = require('../default')
 
                     <div className='form-group'>
                     <label htmlFor='cuisines'>Cuisines</label>
-                    <input type='number' className='form-control' id='cuisines' name='cuisines' value={new Date().getFullYear()} required/>
+                    <input className='form-control' id='cuisines' name='cuisines' required/>
                     </div>
 
                     <div className='from-group'>
                     <label for='founded'>Founded Year</label>
-                    <input className='form-control' id='founded' name='founded'/>
+                    <input type='number' className='form-control' id='founded' name='founded' value={new Date().getFullYear()}/>
                     </div>
                     
-                    <input className='btn btn-primary' type='submit' value='Add Place'/>
+                    <input className='btn btn-primary' type='submit' value='Add Place' />
 
                 </form>
             </main>
