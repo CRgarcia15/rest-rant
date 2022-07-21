@@ -68,6 +68,7 @@ router.post('/:id/rant', (req, res) => {
   res.send('GET /places/:id/rant stub')
 })
 
+//post comment
 router.post('/:id/commnet', (req, res) => {
     console.log(req.body)
     db.Place.findById(req.params.id)
