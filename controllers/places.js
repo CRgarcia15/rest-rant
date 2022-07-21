@@ -90,6 +90,7 @@ router.post('/:id/rant', (req, res) => {
 
 //post comment
 router.post('/:id/commnet', (req, res) => {
+  req.body.rant = req.body.rant ? true : false
     console.log(req.body)
     db.Place.findById(req.params.id)
     .then(place => {
@@ -108,7 +109,6 @@ router.post('/:id/commnet', (req, res) => {
     .catch(err => {
       res.render('error404')
     })
-    req.body.rant = req.body.rant ? true : false
     res.send('GET/places/:id/comment stub')
 })
 
