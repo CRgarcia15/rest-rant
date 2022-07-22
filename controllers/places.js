@@ -83,7 +83,7 @@ router.get('/:id', (req, res) => {
 
 router.put('/:id', (req, res) => {
   db.Place.findOneAndUpdate(req.params.id, req.body)
-  .then(() => {
+  .then((place) => {
     res.redirect(`/places/${req.params.id}`)
   })
   .catch(err => {
